@@ -20,7 +20,7 @@ const adapter = new JSONFile('db.json');
 export const db = new Low(adapter);
 await db.read();
 //set initial db
-db.data = db.dta || {users: []}
+db.data = db.data || {users: []}
 
 
 //core middlewares
